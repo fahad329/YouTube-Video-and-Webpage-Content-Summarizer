@@ -3,7 +3,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_groq import ChatGroq
 from langchain_community.document_loaders import YoutubeLoader, UnstructuredURLLoader
 import validators
-
+#######
 # Streamlit App
 st.set_page_config(page_title="LangChain: Summarize Text From YT or Website", page_icon="🦜")
 st.title("🦜 LangChain: Summarize Text From YT or Website")
@@ -69,4 +69,5 @@ if st.button("Summarize the Content from YT or Website"):
                 st.success(output_summary.content)
 
         except Exception as e:
+
             st.exception(f"Exception: {e}")
