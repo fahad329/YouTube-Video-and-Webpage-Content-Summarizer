@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://fahadfarooq:$HF_TOKEN@huggingface.co/spaces/fahadfarooq123/fahadfarooq123/WebcontentSummarizer main
+        run: git push https://fahadfarooq123:$HF_TOKEN@huggingface.co/spaces/fahadfarooq123/WebcontentSummarizer main
